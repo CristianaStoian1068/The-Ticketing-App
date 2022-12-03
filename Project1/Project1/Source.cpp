@@ -1,8 +1,12 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
-int main()
+
+int main ()
 {
-	int i;
-	i = 1;
-	cout << i;
+	cout <<"_______________________________________________________________________" << endl;
+	cout << endl;
+	cout<<"                       "<< "Movie ticketing App"<<"                      "<<endl;
+	cout << endl;
+	cout <<"_______________________________________________________________________" << endl;
 }
