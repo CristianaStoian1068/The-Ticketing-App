@@ -12,13 +12,13 @@ private:
 public:
 	Movie(string aName)
 	{	
-		name=aName;
+		SetName(aName);
 }
 	void SetName(string aName)
 	{
-		if (aName =="Home alone" || aName == "Christmas movie" || aName == "Grinch")
+		if (aName =="Home alone" || aName == "Christmas movie" || aName == "The Grinch")
 			name=aName;
-		else name = "This movie is not available";
+		else name = "unavailable";
 	}
 	string GetName()
 	{
