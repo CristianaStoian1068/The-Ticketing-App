@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "Header1.h*";
 using namespace std;
 
 
@@ -13,14 +14,14 @@ int main()
 	cout << "_______________________________________________________________________" << endl;
 
 	int selection;
-	int selection2;
+	 string selection2;
 	do
 	{
 		cout << endl
 			<< "1.See movies"
 			<< "2.Buy ticket"
 			<< "3.Exit"
-			<< "Enter your selection:":
+			<< "Enter your selection:";
 		cin >> selection;
 		switch (selection)
 		{
@@ -34,6 +35,8 @@ int main()
 			Movie choice(selection2);
 			choice.SetName(selection2);
 			cout << "The movie selected is" << choice.GetName();
+			cout << "Please choose time:" << endl;
+
 
 
 
