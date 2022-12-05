@@ -100,3 +100,17 @@ public:
 		~Movie() {}
 
 };
+istream& operator>> (istream& in, Movie& m) {
+	in >> m.name >> m.time >> m.rating >> m.duration >> m.date;
+	return in;
+}
+
+ostream& operator<<(ostream& out, const Movie& m) {
+	out << "Name: " << m.name
+		<< " | Time: " << m.time
+		<< " | Rating: " << m.rating
+		<< " | Duration: " << m.duration
+		<< " | Date: " << m.date
+		<< "\n";
+	return out;
+}
