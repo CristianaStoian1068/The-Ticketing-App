@@ -6,18 +6,18 @@ using namespace std;
 
 
 int main()
+
 {
+	
+	
 	cout << "_______________________________________________________________________" << endl;
 	cout << endl;
 	cout << "                       " << "TICKETING APP " << "                      " << endl;
 	cout << endl;
 	cout << "_______________________________________________________________________" << endl;
 
-	int selection;
-	 string selection2;
-	 int selection3;
-	do
-	{
+	
+	Movie movies[100];
 		cout << endl
 			<< "1.See movies"
 			<< "2.Buy ticket"

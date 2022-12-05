@@ -7,15 +7,47 @@ class Movie
 {
 private:
 	string name;
+	string time;
 	string rating;
-	int time;
-	int hall_no;
+	int duration;
+	int date;
 public:
-	Movie(string aName, int aTime)
+	//Default Constructor
+	Movie()
 	{
-		this.time = aTime;
-		this.name = aName;
+		this->name = "default_name";
+		this->time = "default_time";
+		this->rating = "default_rating";
+		this->duration = 0;
+		this->date = 0;
 	}
+	//Constructor with parameters
+	Movie(string name, string time, string rating, int duration, int date) {
+		this->name = name;
+		this->time = time;
+		this->rating = rating;
+		this->duration = duration;
+		this->date = date;
+	}
+	//Getters
+	string GetName()
+	{
+		return name;
+	}
+	string GetTime()
+	{
+		return time;
+	}
+	string GetRating()
+	{ return rating;
+	}
+	int GetDuration()
+	{ return duration;
+	}
+	int GetDate();
+	{ return date;
+	}
+	//Setters
 	void SetTime(int aTime)
 	{
 		if (aTime == 17 || aTime == 18 || aTime == 19)
@@ -29,13 +61,8 @@ public:
 			name = aName;
 		else name = "unavailable";
 	}
-	string GetName()
-	{
-		return name;
+	
 	}
-	int GetTime()
-	{
-		return time;
-	}
+	
 
 };
