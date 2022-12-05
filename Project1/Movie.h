@@ -39,30 +39,55 @@ public:
 		return time;
 	}
 	string GetRating()
-	{ return rating;
+	{
+		return rating;
 	}
 	int GetDuration()
-	{ return duration;
+	{
+		return duration;
 	}
-	int GetDate();
-	{ return date;
+	int GetDate()
+	{
+		return date;
 	}
 	//Setters
-	void SetTime(int aTime)
-	{
-		if (aTime == 17 || aTime == 18 || aTime == 19)
-			time = aTime;
-		else
-			time = 0;
+	void SetName(string name) {
+		try {
+			if (name == "Home Alone" || name == "The Grinch" || name == "Christmas Love Story") {
+				this->name = name;
+			}
+		else {
+			throw exception("The movie selected is unavailable, please make your choice again:\n");
+			}
 	}
-	void SetName(string aName)
-	{
-		if (aName == "Home alone" || aName == "Christmas movie" || aName == "The Grinch")
-			name = aName;
-		else name = "unavailable";
+	catch (exception& e) {
+		cout << e.what();
+	}
+}
+	void SetTime(string time) {
+		try {
+			if (time == "14:30" || time == "19:40" || time == "21:50") {
+				this->time = time;
+			}
+			else {
+				throw(time);
+			}
+		}
+		catch (string wrongTime) {
+			cout << "At the hour " << wrongTime << " there is no movie available or the time selected is unavailable\n";
+		}
 	}
 	
+	void SetRating(string rating) {
+		this->rating = rating;
 	}
+	void SetDuration(int duration) {
+		this->duration = duration;
+	}
+	void SetDate(int date) {
+		this->date = date;
+	}
+	
 	
 
 };
