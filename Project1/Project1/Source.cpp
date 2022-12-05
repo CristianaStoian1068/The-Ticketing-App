@@ -15,6 +15,7 @@ int main()
 
 	int selection;
 	 string selection2;
+	 int selection3;
 	do
 	{
 		cout << endl
@@ -34,8 +35,19 @@ int main()
 			cin >> selection2;
 			Movie choice(selection2);
 			choice.SetName(selection2);
-			cout << "The movie selected is" << choice.GetName();
+			cout<<""
+			cout << "The movie selected is " << choice.GetName();
 			cout << "Please choose time:" << endl;
+			cout << "Availaible times:";
+
+			Movie choice(selection3);
+			choice.SetTime(selection3);
+			cout << choice.GetTime();
+
+
+
+			cin >> selection3;
+			choice.SetTime(selection3)
 
 
 
