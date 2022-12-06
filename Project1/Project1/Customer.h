@@ -60,3 +60,6 @@ istream& operator>> (istream& in, Customer& c) {
 	in >> c.full_name>>c.no_tickets_bought >> c.card;
 	return in;
 }ostream& operator<<(ostream& out, const Customer& c)
+{
+	out << c.full_name << c.no_tickets_bought << c.card;
+}

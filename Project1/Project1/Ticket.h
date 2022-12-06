@@ -92,3 +92,6 @@ istream& operator>> (istream& in, Ticket& t) {
 	return in;
 }
 ostream& operator<<(ostream& out, const Ticket& t)
+{
+	out << t.movie_details << t.hall_no << t.row << t.seat << t.typeOfTicket << t.id;
+}
